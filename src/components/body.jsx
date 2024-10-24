@@ -315,29 +315,32 @@ Whether you're looking to establish an online presence or improve your existing 
 
   <div className='flex justify-around items-center'>
     {/* Instagram */}
-    <div className="" data-aos="zoom-in-down">
-      <a className="focus:outline-none"
-      href='https://www.instagram.com/arpitjoshi126/profilecard/?igsh=Z3JtbzVyY3J1a2o4'
-      target="_blank" 
-    rel="noopener noreferrer" 
-    aria-label="LinkedIn Profile">
-        <svg
-          viewBox="0 0 16 16"
-          className="bi bi-instagram transform transition-transform duration-300 hover:scale-125 hover:text-blue-500"
-          fill="currentColor"
-          height="40"
-          width="40"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-        </svg>
-      </a>
-      <span className="absolute -top-14 left-1/2 transform -translate-x-1/2 z-20 px-4 py-2 text-sm font-bold text-white bg-gray-900 rounded-lg shadow-lg transition-transform duration-300 ease-in-out scale-0 group-hover:scale-100">Instagram</span>
-    </div>
+    <div className="relative group" data-aos="zoom-in-down">
+  <a
+    className="focus:outline-none"
+    href='https://www.instagram.com/arpitjoshi126/profilecard/?igsh=Z3JtbzVyY3J1a2o4'
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram Profile"
+  >
+    <svg
+      viewBox="0 0 16 16"
+      className="bi bi-instagram transform transition-transform duration-300 hover:scale-125 hover:text-blue-500"
+      fill="currentColor"
+      height="40"
+      width="40"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+    </svg>
+  </a>
+  <span className="absolute -top-14 left-1/2 transform -translate-x-1/2 z-20 px-4 py-2 text-sm font-bold text-white bg-gray-900 rounded-lg shadow-lg transition-transform duration-300 ease-in-out scale-0 group-hover:scale-100">Instagram</span>
+</div>
+
 
 
     {/* LinkedIn */}
-    <div className="  " data-aos="zoom-in-down">
+    <div className="group relative" data-aos="zoom-in-down">
   <a 
     href="https://www.linkedin.com/in/arpit-joshi-999a58282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " 
     target="_blank" 
@@ -345,18 +348,16 @@ Whether you're looking to establish an online presence or improve your existing 
     className="focus:outline-none"
     aria-label="LinkedIn Profile"
   >
-  <svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 448 512"
-  className="bi bi-linkedin transform transition-transform duration-300 hover:scale-125 hover:text-blue-500"
-  fill="currentColor"
-  height="40"
-  width="40"
->
-  <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
-</svg>
-
- 
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 448 512"
+      className="bi bi-linkedin transform transition-transform duration-300 hover:scale-125 hover:text-blue-500"
+      fill="currentColor"
+      height="40"
+      width="40"
+    >
+      <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+    </svg>
   </a>
   <span className="absolute -top-14 left-1/2 transform -translate-x-1/2 z-20 px-4 py-2 text-sm font-bold text-white bg-gray-900 rounded-lg shadow-lg transition-transform duration-300 ease-in-out scale-0 group-hover:scale-100">
     LinkedIn
@@ -364,8 +365,9 @@ Whether you're looking to establish an online presence or improve your existing 
 </div>
 
 
+
     {/* GitHub */}
-    <div className="  " data-aos="zoom-in-down">
+    <div className="group relative  " data-aos="zoom-in-down">
       <a className="focus:outline-none"
       href='https://github.com/arpitjoshi24'>
         <svg
@@ -403,6 +405,7 @@ Whether you're looking to establish an online presence or improve your existing 
     Discord
   </span>
 </div>
+
   </div>
   {/* footer */}
   <section className='mt-60 md:mt-72 bg-[#061A34] h-24 flex items-center justify-center'>
