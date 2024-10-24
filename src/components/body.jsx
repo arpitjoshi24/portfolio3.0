@@ -11,19 +11,22 @@ import VanillaTilt from 'vanilla-tilt';
 
 export default function Body() {
   //  tilt
-  const tiltRef = useRef(null);
+  const tiltRefs = useRef([]);
 
-  useEffect(() => {
-    if (tiltRef.current) {
-      VanillaTilt.init(tiltRef.current, {
+useEffect(() => {
+  tiltRefs.current.forEach((ref) => {
+    if (ref) {
+      VanillaTilt.init(ref, {
         scale: 1.1,
-        max: 25, // Adjust the tilt settings as needed
+        max: 25,
         speed: 400,
-        glare: true, // Add a "glare" effect
+        glare: true,
         "max-glare": 0.5,
       });
     }
-  }, []);
+  });
+}, []);
+
 
   // AOS initialization
   useEffect(() => {
@@ -183,7 +186,8 @@ export default function Body() {
           {/* Uncomment and use the video if needed */}
           <div className=" flex justify-center  md:mt-36 md:ml-48">
           <img
-        ref={tiltRef}
+        ref={(el) => (tiltRefs.current[0] = el)}
+
         src="arpit1.jpg"
         alt="Arpit"
         className="your-element object-cover rounded-full h-56 md:h-96"
@@ -251,7 +255,7 @@ Whether you're looking to establish an online presence or improve your existing 
   <div className="container mx-auto flex flex-col md:flex-row px-5 py-12 md:py-16 border-2 rounded-xl border-blue-900 items-center">
    
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-8 md:mb-0">
-      <img ref={tiltRef} className=" your-element object-cover object-center rounded border-2 border-black" alt="hero" src="/onestop.png" />
+      <img ref={(el) => (tiltRefs.current[1] = el)} className=" your-element object-cover object-center rounded border-2 border-black" alt="hero" src="/onestop.png" />
     </div>
     
   
@@ -300,7 +304,7 @@ Whether you're looking to establish an online presence or improve your existing 
 
    
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mt-8 md:mt-0">
-      <img   ref={tiltRef} className=" your-element object-cover object-center rounded border-2 border-black" alt="hero" src="/simon.png" />
+      <img  ref={(el) => (tiltRefs.current[2] = el)} className=" your-element object-cover object-center rounded border-2 border-black" alt="hero" src="/simon.png" />
     </div>
   </div>
 </section>
@@ -310,7 +314,7 @@ Whether you're looking to establish an online presence or improve your existing 
   <div className="container mx-auto flex flex-col md:flex-row px-5 py-16 md:py-24 border-2 rounded-xl border-blue-900 items-center">
    
     <div className="lg:max-w-lg w-full md:w-1/2 mb-10 md:mb-0 ">
-      <img ref={tiltRef} className=" your-element object-cover border-2 border-black object-center rounded" alt="SpyDown Screenshot" src="/spydown.png"/>
+      <img ref={(el) => (tiltRefs.current[3] = el)} className=" your-element object-cover border-2 border-black object-center rounded" alt="SpyDown Screenshot" src="/spydown.png"/>
     </div>
     
    
