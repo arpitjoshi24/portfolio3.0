@@ -1,12 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useRef } from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import { Typewriter } from 'react-simple-typewriter';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import VanillaTilt from 'vanilla-tilt';
+
+
 
 export default function Body() {
+  //  tilt
+  const tiltRef = useRef(null);
+
+  useEffect(() => {
+    if (tiltRef.current) {
+      VanillaTilt.init(tiltRef.current, {
+        scale: 1.1,
+        max: 25, // Adjust the tilt settings as needed
+        speed: 400,
+        glare: true, // Add a "glare" effect
+        "max-glare": 0.5,
+      });
+    }
+  }, []);
+
   // AOS initialization
   useEffect(() => {
     AOS.init({
@@ -143,8 +161,8 @@ export default function Body() {
       </nav>
     </div>
       {/* Hero Section */}
-      <section id="hero" className="md:h-screen bg-primary">
-        <div className="md:flex" >
+      <section id="hero" className="lg:h-screen bg-primary">
+        <div className="lg:flex" >
           <div className="md:py-44 py-24 mx-20">
             <h1 className="text-3xl  md:mx-0 md:text-6xl text-secondary pb-4">Hello,</h1>
             <h2 className="text-2xl  md:mx-0 md:text-6xl text-secondary pb-4">
@@ -164,7 +182,12 @@ export default function Body() {
           </div>
           {/* Uncomment and use the video if needed */}
           <div className=" flex justify-center  md:mt-36 md:ml-48">
-            <img src="arpit1.jpg" alt="Arpit" className="object-cover rounded-full  h-56 md:h-96" />
+          <img
+        ref={tiltRef}
+        src="arpit1.jpg"
+        alt="Arpit"
+        className="your-element object-cover rounded-full h-56 md:h-96"
+      />
           </div>
 
 
@@ -172,10 +195,10 @@ export default function Body() {
       </section>
 
       {/* About Section */}
-      <section id='about' className="bg-primary md:h-screen text-secondary" >
-        <h3 className="text-center text-3xl md:text-6xl  py-36">ABOUT ME</h3>
+      <section id='about' className="bg-primary lg:h-screen text-secondary" >
+        <h3 className="text-center text-3xl md:text-6xl  py-12">ABOUT ME</h3>
 
-        <div className="md:flex px-4 py-6 md:py-0 md:px-10 md:space-x-10 h-full" data-aos="fade-in">
+        <div className="lg:flex px-4 py-6 md:py-0 md:px-10 md:space-x-10 h-full" data-aos="fade-in">
           {/* Left side with text */}
           <div className="basis-1/2">
             <p className="text-lg">
@@ -197,14 +220,14 @@ Whether you're looking to establish an online presence or improve your existing 
       </section>
 
       {/* Skills Section */}
-      <section id='skills' className="md:h-screen bg-primary">
-  <h3 className="text-center text-secondary text-6xl py-24">SKILLS</h3>
+      <section id='skills' className="lg:h-screen  bg-primary">
+  <h3 className="text-center text-secondary text-3xl md:text-6xl  py-24">SKILLS</h3>
 
   <div className="px-10 py-24">
     <Slider {...settings} className="container mx-auto">
       {skills.map((skill, index) => (
         <div key={index} className="px-4">
-          <div className="bg-gradient-to-b from-[#777777] via-[#00e1ff1a] to-[#061A34] rounded-lg p-6 flex flex-col items-center shadow-[0_4px_20px_rgba(0,0,0,0.3),_0_6px_10px_1px_rgba(0,255,255,0.4)] ">
+          <div className="bg-gradient-to-b from-[#777777] via-[#00e1ff1a] transition-transform duration-300 transform hover:scale-105 to-[#061A34] rounded-lg p-6 flex flex-col items-center shadow-[0_4px_20px_rgba(0,0,0,0.3),_0_6px_10px_1px_rgba(0,255,255,0.4)] ">
             <img
               src={skill.img}
               alt={skill.title}
@@ -228,7 +251,7 @@ Whether you're looking to establish an online presence or improve your existing 
   <div className="container mx-auto flex flex-col md:flex-row px-5 py-12 md:py-16 border-2 rounded-xl border-blue-900 items-center">
    
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-8 md:mb-0">
-      <img className="object-cover object-center rounded border-2 border-black" alt="hero" src="/onestop.png" />
+      <img ref={tiltRef} className=" your-element object-cover object-center rounded border-2 border-black" alt="hero" src="/onestop.png" />
     </div>
     
   
@@ -277,7 +300,7 @@ Whether you're looking to establish an online presence or improve your existing 
 
    
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mt-8 md:mt-0">
-      <img className="object-cover object-center rounded border-2 border-black" alt="hero" src="/simon.png" />
+      <img   ref={tiltRef} className=" your-element object-cover object-center rounded border-2 border-black" alt="hero" src="/simon.png" />
     </div>
   </div>
 </section>
@@ -286,8 +309,8 @@ Whether you're looking to establish an online presence or improve your existing 
 <section data-aos="zoom-in-up" className="body-font shadow-xl shadow-purple-900 mx-4 md:mx-12">
   <div className="container mx-auto flex flex-col md:flex-row px-5 py-16 md:py-24 border-2 rounded-xl border-blue-900 items-center">
    
-    <div className="lg:max-w-lg w-full md:w-1/2 mb-10 md:mb-0 border-2 border-black">
-      <img className="object-cover object-center rounded" alt="SpyDown Screenshot" src="/spydown.png"/>
+    <div className="lg:max-w-lg w-full md:w-1/2 mb-10 md:mb-0 ">
+      <img ref={tiltRef} className=" your-element object-cover border-2 border-black object-center rounded" alt="SpyDown Screenshot" src="/spydown.png"/>
     </div>
     
    
